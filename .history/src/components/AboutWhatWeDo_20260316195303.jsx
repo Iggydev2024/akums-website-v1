@@ -95,7 +95,15 @@ const AboutWhatWeDo = () => {
               </p>
             </div>
           </div>
-         
+
+          {/* Community Health Outreach */}
+          
+          {/* <FlipCard
+          icon="bi bi-heart-pulse-fill"
+          frontTitle="Community Health Outreach"
+          backTitle="What We Do"
+          backText= "We conduct medical camps, health education drives, screenings, and awareness campaigns in underserved communities and underrepresented health conditions."
+          /> */}
 
           {/* Community Health Outreach */}
           {whatWeDoList.map((item, index) => (

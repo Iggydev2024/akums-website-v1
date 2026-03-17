@@ -95,12 +95,18 @@ const AboutWhatWeDo = () => {
               </p>
             </div>
           </div>
-         
 
           {/* Community Health Outreach */}
-          {whatWeDoList.map((item, index) => (
-            
-        <div className="col-md-4" key={index}>
+          
+          {/* <FlipCard
+          icon="bi bi-heart-pulse-fill"
+          frontTitle="Community Health Outreach"
+          backTitle="What We Do"
+          backText= "We conduct medical camps, health education drives, screenings, and awareness campaigns in underserved communities and underrepresented health conditions."
+          /> */}
+
+          {/* Community Health Outreach */}
+        <div className="col-md-4">
           <div
             className="ui-flip-card"
             onClick={(e) => e.currentTarget.classList.toggle("ui-active")}
@@ -110,27 +116,25 @@ const AboutWhatWeDo = () => {
               {/* Front */}
               <div className="ui-flip-front">
                 <div className="ui-icon-circle">
-                  <i className={item.icon}></i>
+                  <i className="bi bi-heart-pulse-fill"></i>
                 </div>
 
-                <h4 className="ui-card-title">{item.frontTitle}</h4>
+                <h4 className="ui-card-title">Community Health Outreach</h4>
               </div>
 
               {/* Back */}
               <div className="ui-flip-back">
-                <h3>{item.backTitle}</h3>
+                <h3>What We Do</h3>
                 <p>
-                  {item.backText}
+                  We conduct medical camps, health education drives, screenings,
+                  and awareness campaigns in underserved communities and
+                  underrepresented health conditions.
                 </p>
               </div>
 
             </div>
           </div>
         </div>
-
-          )) }
-       
-       
 
           {/* Leadership & Innovation */}
           <div className="col-md-4">
@@ -139,7 +143,7 @@ const AboutWhatWeDo = () => {
                 <i className="bi bi-lightbulb-fill"></i>
               </div>
               
-              <h4 className="wd-heading">Leadership & Innovation</h4> 
+              <h4 className="wd-heading">Leadership & Innovation</h4>
               <p>
                 We build leadership capabilities via MSAKE seminars, innovation
                 challenges, teamwork challanges and idea incubators.

@@ -352,7 +352,7 @@
 /* Container */
 /* start of ui-flip-card */
 .ui-flip-card{
-  width:100%;
+  width:150%;
   height:260px;
   perspective:1000px;
   cursor:pointer;
