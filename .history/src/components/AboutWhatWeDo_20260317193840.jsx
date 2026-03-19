@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "../styles/about_whatwedo.css";
-import image from "../assets/MOMlogo.jpg";
+import FlipCard from "./FlipCard"
 
 
 const AboutWhatWeDo = () => {
@@ -10,39 +10,35 @@ const AboutWhatWeDo = () => {
   // List for AbouWhatWeDo section
   const whatWeDoList = [
     {
-      icon: <i className='bi bi-mortarboard-fill' style={{ color: "black" }}></i>,
+      icon: "bi bi-mortarboard-fill",
       frontTitle: "Academic Mentorship",
       backTitle: "What We Do",
-      backText: "We support students via mentorship sessions, peer-led meetings, and encourage study groups to nurture excellence.",
-      style: { borderTop: "6px solid #0b3625" },
+      backText: "We support students via mentorship sessions, peer-led meetings, and encourage study groups to nurture excellence."
     },
     {
-      icon: <i className='bi bi-heart-pulse-fill' style={{ color: "#ad1818" }}></i>,
+      icon: "bi bi-heart-pulse-fill",
       frontTitle: "Community Health Outreach",
       backTitle: "What We Do",
-      backText: "We conduct medical camps, health education drives, screenings, and awareness campaigns in underserved communities and underrepresented health conditions.",
-      style: { borderTop: "6px solid #ad1818" }
+      backText: "We conduct medical camps, health education drives, screenings, and awareness campaigns in underserved communities and underrepresented health conditions."
     },
     {
-      icon: <i className='bi bi-lightbulb-fill' style={{ color: "#5927b8" }}></i>,
+      icon: "bi bi-lightbulb-fill",
       frontTitle: "Leadership & Innovation",
       backTitle: "What We Do",
-      backText: "We foster leadership skills and promote innovation through workshops, seminars, and collaborative projects.",
-      style: { borderTop: "6px solid #5927b8" }
+      backText: "We foster leadership skills and promote innovation through workshops, seminars, and collaborative projects."
     },
     {
-      icon:<i className='bi bi-globe2' style={{ color: "#1a73e8" }}></i>,
+      icon: "bi bi-globe2",
       frontTitle: "Global Partnerships",
       backTitle: "What We Do",
-      backText: "We collaborate with international organizations to expand our impact and create meaningful change.",
-      style: { borderTop: "6px solid #1a73e8" }
+      backText: "We collaborate with international organizations to expand our impact and create meaningful change."
+
     },
       {
-      icon:  <img src={image} alt="Mind Over Matter" style={{ borderRadius: "50%", width: "100px", height: "100px" }} />,
+      icon: "bi bi-people-fill",
       frontTitle: "Student Welfare",
       backTitle: "Mind Over Matter",
-      backText: "Mind Over Matter is a mental health and wellness club dedicated to supporting medical students through open conversations, peer support, and initiatives that promote emotional resilience, balance, and personal growth.",
-      style: { borderTop: "6px solid #0b3625" }
+      backText: "Mind Over Matter is a mental health and wellness club dedicated to supporting medical students through open conversations, peer support, and initiatives that promote emotional resilience, balance, and personal growth."
     }
   ];
 
@@ -85,7 +81,20 @@ const AboutWhatWeDo = () => {
         </p>
 
         <div className="row gy-4">
-          
+
+          {/* Academic Mentorship */}
+          <div className="col-md-4">
+            <div className="wd-block academic">
+              <div className="wd-icon">
+                <i className="bi bi-mortarboard-fill"></i>
+              </div>
+              <h4 className="wd-heading">Academic Mentorship</h4>
+              <p>
+                We support students via mentorship sessions,
+                peer-led meetings, and encourage study groups to nurture excellence.
+              </p>
+            </div>
+          </div>
          
 
           {/* Community Health Outreach */}
@@ -99,9 +108,9 @@ const AboutWhatWeDo = () => {
             <div className="ui-flip-inner">
 
               {/* Front */}
-              <div className="ui-flip-front" style={item.style}>
+              <div className="ui-flip-front">
                 <div className="ui-icon-circle">
-                  {item.icon}
+                  <i className={item.icon}></i>
                 </div>
 
                 <h4 className="ui-card-title">{item.frontTitle}</h4>

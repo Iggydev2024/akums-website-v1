@@ -99,7 +99,7 @@ const AboutWhatWeDo = () => {
             <div className="ui-flip-inner">
 
               {/* Front */}
-              <div className="ui-flip-front" style={item.style}>
+              <div className="ui-flip-front">
                 <div className="ui-icon-circle">
                   {item.icon}
                 </div>

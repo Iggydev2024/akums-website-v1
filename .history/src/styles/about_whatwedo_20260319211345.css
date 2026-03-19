@@ -26,7 +26,7 @@
 
 .what-we-do .section-title {
   color: #003366;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   position: relative;
   display: inline-block;
@@ -208,7 +208,7 @@
 
 /* Heading */
 .wd-heading {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.8rem;
   color: #003366;
   opacity: 0;
@@ -425,8 +425,7 @@
 
 /* Title */
 .ui-card-title{
-  font-weight:400;
-  font-size:1.2rem;
+  font-weight:500;
 }
 
 /* Back */

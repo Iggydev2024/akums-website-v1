@@ -20,29 +20,26 @@ const AboutWhatWeDo = () => {
       icon: <i className='bi bi-heart-pulse-fill' style={{ color: "#ad1818" }}></i>,
       frontTitle: "Community Health Outreach",
       backTitle: "What We Do",
-      backText: "We conduct medical camps, health education drives, screenings, and awareness campaigns in underserved communities and underrepresented health conditions.",
-      style: { borderTop: "6px solid #ad1818" }
+      backText: "We conduct medical camps, health education drives, screenings, and awareness campaigns in underserved communities and underrepresented health conditions."
     },
     {
       icon: <i className='bi bi-lightbulb-fill' style={{ color: "#5927b8" }}></i>,
       frontTitle: "Leadership & Innovation",
       backTitle: "What We Do",
-      backText: "We foster leadership skills and promote innovation through workshops, seminars, and collaborative projects.",
-      style: { borderTop: "6px solid #5927b8" }
+      backText: "We foster leadership skills and promote innovation through workshops, seminars, and collaborative projects."
     },
     {
       icon:<i className='bi bi-globe2' style={{ color: "#1a73e8" }}></i>,
       frontTitle: "Global Partnerships",
       backTitle: "What We Do",
-      backText: "We collaborate with international organizations to expand our impact and create meaningful change.",
-      style: { borderTop: "6px solid #1a73e8" }
+      backText: "We collaborate with international organizations to expand our impact and create meaningful change."
+
     },
       {
       icon:  <img src={image} alt="Mind Over Matter" style={{ borderRadius: "50%", width: "100px", height: "100px" }} />,
       frontTitle: "Student Welfare",
       backTitle: "Mind Over Matter",
-      backText: "Mind Over Matter is a mental health and wellness club dedicated to supporting medical students through open conversations, peer support, and initiatives that promote emotional resilience, balance, and personal growth.",
-      style: { borderTop: "6px solid #0b3625" }
+      backText: "Mind Over Matter is a mental health and wellness club dedicated to supporting medical students through open conversations, peer support, and initiatives that promote emotional resilience, balance, and personal growth."
     }
   ];
 
@@ -99,7 +96,7 @@ const AboutWhatWeDo = () => {
             <div className="ui-flip-inner">
 
               {/* Front */}
-              <div className="ui-flip-front" style={item.style}>
+              <div className="ui-flip-front">
                 <div className="ui-icon-circle">
                   {item.icon}
                 </div>
